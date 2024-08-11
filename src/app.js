@@ -12,6 +12,7 @@ import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import UserContext from './utils/UserContext';
+import './style/index.css'; // Adjust the path based on your project structure
 
 const Grocery = lazy(() => import('./components/Grocery'));
 const About = lazy(() => import('./components/About'));
@@ -36,7 +37,7 @@ const AppLayout = () => {
     //     <UserContext.Provider value={{ loggedInUser: 'John Cena' }}>
     //       {/* John Cena */}
     //       <Header />
-    //     </UserContext.Provider>
+    //     </UserContext.Provider>s
     //     <Outlet />
     //   </div>
     // </UserContext.Provider>
