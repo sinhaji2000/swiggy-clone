@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import ItemList from './ItemList';
 
-const RestaurantCategory = ({ data, showItems, setShowIndex, dummy }) => {
-  const handleClick = () => {
-    setShowIndex();
-  };
+const RestaurantCategory = ({ data , showItems , setShowIndex}) => {
+
+ const handleClick = () =>{
+  setShowIndex() ;
+ }
 
   return (
     <div>
@@ -20,7 +22,7 @@ const RestaurantCategory = ({ data, showItems, setShowIndex, dummy }) => {
         </div>
         {/* Accordion Body */}
 
-        {showItems && <ItemList items={data.itemCards} dummy={dummy} />}
+        {showItem && <ItemList items={data.itemCards}  />}
       </div>
     </div>
   );

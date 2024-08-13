@@ -24,7 +24,7 @@ const AppLayout = () => {
   useEffect(() => {
     // Make an API call and send username and password
     const data = {
-      name: 'Vasu K',
+      name: 'Mukesh Sinha',
     };
     setUserName(data.name);
   }, []);

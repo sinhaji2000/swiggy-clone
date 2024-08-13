@@ -16,7 +16,7 @@ const RestaurantCard = (props) => {
     costForTwo,
     deliveryTime,
   } = resData?.info;
-  console.log(CDN_URL + cloudinaryImageId , 'image id') ;
+  // console.log(CDN_URL + cloudinaryImageId , 'image id') ;
 
   return (
     <div className="m-4 p-4 w-[250px] bg-gray-100 rounded-lg hover:bg-gray-200 transition-all ">
@@ -40,14 +40,14 @@ const RestaurantCard = (props) => {
           <span>{avgRating} stars</span>
         </h4>
         <h4 className="item-price">
-          <span style={{ marginLeft: '4px' }}>₹</span>
-          <span>{costForTwo / 100} FOR TWO</span>
+          <span style={{ marginLeft: '4px' }}></span>
+          <span>{costForTwo}</span>
         </h4>
         <h4 className="time">
           <span className="icons">
             <FiClock />
           </span>
-          <span>{deliveryTime} minutes</span>
+          <span>{resData.info.sla.deliveryTime} minutes</span>
         </h4>
         <h4>User: {loggedInUser}</h4>
       </div>
