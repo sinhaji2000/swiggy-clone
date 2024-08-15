@@ -1,0 +1,5 @@
+{
+    "files.autoSaveWhenNoErrors": true,
+    "editor.formatOnSaveMode": "modifications",
+    "notebook.formatOnSave.enabled": true
+}

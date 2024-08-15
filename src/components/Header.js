@@ -2,11 +2,13 @@ import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import UserContext from '../utils/UserContext';
+import { useSelector } from "react-redux";
 
 const Header = () => {
-  const [btnNameReact, setBtnNameReact] = useState('Login');
+  const [btnNameReact, setBtnNameReact] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
+  const cartItems = useSelector((store) => store.cart.items);
 
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
@@ -24,7 +26,7 @@ const Header = () => {
       </div>
       <div className="flex items-center ">
         <ul className="flex p-4 m-4">
-          <li className="px-4">Online Status: {onlineStatus ? '✅' : '⛔'}</li>
+          <li className="px-4">Online Status: {onlineStatus ? "✅" : "⛔"}</li>
           <li className="px-4">
             <Link to="/" className="links">
               Home
@@ -46,15 +48,17 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-4">
-            <Link className="links">Cart</Link>
+            <Link to="/cart" className="links font-bold text-xl">
+              Cart (items : {cartItems.length})
+            </Link>
           </li>
           <button
             className="loginBtn"
             onClick={() => {
               //   btnName = 'Logout';
-              btnNameReact === 'Login'
-                ? setBtnNameReact('Logout')
-                : setBtnNameReact('Login');
+              btnNameReact === "Login"
+                ? setBtnNameReact("Logout")
+                : setBtnNameReact("Login");
               console.log(btnNameReact);
             }}
           >
