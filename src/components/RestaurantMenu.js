@@ -7,7 +7,7 @@ import RestaurantCategory from './RestaurantCategory';
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
-  // console.log(resId , "res") ;
+  console.log(resId, "res");
 
   const dummy = 'Dummy Data';
 

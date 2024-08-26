@@ -19,9 +19,9 @@ const ShimmerMenu = () => {
                 stroke
                 animate
                 style={{
-                  position: 'relative',
-                  top: '2px',
-                  marginRight: '3px',
+                  position: "relative",
+                  top: "2px",
+                  marginRight: "3px",
                 }}
               ></span>
               <span></span>
@@ -30,9 +30,9 @@ const ShimmerMenu = () => {
               <span
                 className="icons stroke animate"
                 style={{
-                  position: 'relative',
-                  top: '2px',
-                  marginRight: '3px',
+                  position: "relative",
+                  top: "2px",
+                  marginRight: "3px",
                 }}
               ></span>
               <span> </span>
