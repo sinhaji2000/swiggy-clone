@@ -1,5 +1,7 @@
 {
     "files.autoSaveWhenNoErrors": true,
     "editor.formatOnSaveMode": "modifications",
-    "notebook.formatOnSave.enabled": true
+    "notebook.formatOnSave.enabled": true,
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }

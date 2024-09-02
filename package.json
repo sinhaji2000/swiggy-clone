@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "parcel index.html"
   },
   "author": "Mukesh sinha",
@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
+    "@testing-library/jest-dom": "^6.5.0",
     "autoprefixer": "^10.4.20",
     "parcel": "^2.12.0",
     "postcss": "^8.4.41",
@@ -22,10 +23,12 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.9"
   }
